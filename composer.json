@@ -1,0 +1,72 @@
+{
+    "name": "tal7aouy/laraversion",
+    "description": "Allows to create Laravel Model versioning  roll back to the specified version",
+    "license": "MIT",
+    "keywords": [
+        "Laravel",
+        "versionable",
+        "Version",
+        "Model",
+        "PHP"
+    ],
+    "support": {
+        "issues": "https://github.com/tal7aouy/laraversion/issues",
+        "source": "https://github.com/tal7aouy/laraversion"
+    },
+    "authors": [
+        {
+            "name": "Mhammed Talhaouy",
+            "email": "tal7aouy@gmail.com",
+            "role": "PHP Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "laravel/framework": "^9.0",
+        "sebastian/diff": "^4.0",
+        "doctrine/dbal": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^7.0",
+        "friendsofphp/php-cs-fixer": "^3.6",
+        "mockery/mockery": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tal7aouy\\Laraversion\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "./tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tal7aouy\\Laraversion\\ServiceProvider"
+            ]
+        },
+        "hooks": {
+            "pre-commit": [
+                "composer check-style",
+                "composer test"
+            ],
+            "pre-push": [
+                "composer test"
+            ]
+        }
+    },
+    "scripts": {
+        "cghooks": "vendor/bin/cghooks",
+        "check": "php-cs-fixer fix --using-cache=no --diff --dry-run --ansi",
+        "fix": "php-cs-fixer fix --using-cache=no --ansi",
+        "test": "phpunit --colors"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    }
+}
