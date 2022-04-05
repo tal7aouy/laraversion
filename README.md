@@ -4,9 +4,7 @@
 
 <p align="center">
 <a href="https://packagist.org/packages/tal7aouy/laraversion"><img src="https://poser.pugx.org/tal7aouy/laraversion/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/tal7aouy/laraversion"><img src="https://poser.pugx.org/tal7aouy/laraversion/v/unstable.svg" alt="Latest Unstable Version"></a>
 <a href="https://scrutinizer-ci.com/g/tal7aouy/laraversion/?branch=master"><img src="https://scrutinizer-ci.com/g/tal7aouy/laraversion/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-<a href="https://scrutinizer-ci.com/g/tal7aouy/laraversion/?branch=master"><img src="https://scrutinizer-ci.com/g/tal7aouy/laraversion/badges/coverage.png?b=master" alt="Code Coverage"></a>
 <a href="https://packagist.org/packages/tal7aouy/laraversion"><img src="https://poser.pugx.org/tal7aouy/laraversion/downloads" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/tal7aouy/laraversion"><img src="https://poser.pugx.org/tal7aouy/laraversion/license" alt="License"></a>
 </p>
